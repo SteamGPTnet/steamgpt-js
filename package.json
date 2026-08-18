@@ -1,0 +1,21 @@
+{
+    "name": "steamgpt",
+    "version": "1.0.1",
+    "description": "Typed client for the free SteamGPT Steam data API: profiles, SteamID conversion, VAC and game bans, FACEIT stats, friends, batch and compare. No API key, no registration.",
+    "keywords": [ "steam", "steam-api", "steamid", "steamid64", "steamid-converter", "vac", "vac-ban", "faceit", "cs2", "ai-agents" ],
+    "homepage": "https://steamgpt.net",
+    "repository": { "type": "git", "url": "git+https://github.com/SteamGPTnet/steamgpt-js.git" },
+    "bugs": { "url": "https://github.com/SteamGPTnet/steamgpt-js/issues" },
+    "license": "MIT",
+    "author": "SteamGPT (https://steamgpt.net)",
+    "type": "module",
+    "scripts": { "test": "node test.mjs" },
+    "main": "./index.cjs",
+    "module": "./index.mjs",
+    "types": "./index.d.ts",
+    "exports": {
+        ".": { "types": "./index.d.ts", "import": "./index.mjs", "require": "./index.cjs" }
+    },
+    "files": [ "index.mjs", "index.cjs", "index.d.ts", "README.md", "LICENSE" ],
+    "engines": { "node": ">=18" }
+}
